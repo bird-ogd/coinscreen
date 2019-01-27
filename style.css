@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "ModeSeven";
+    src: url('media/MODES___.TTF') format("truetype");
+}
+
+* {
+	text-decoration: none;
+	color: white;
+    font-family: 'ModeSeven', monospace;
+}
+
+body {
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: black;
+    background-position: left-top;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.neutral {
+	background-color: blue;
+	padding: 5px;
+    color: yellow;
+    font-size: 4em;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.left {
+    float: right;
+    font-size: 1em;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.click {
+    color: yellow;
+    cursor: pointer;
+}
+
+.row {
+    margin-top: -36px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 24.95%;
+}
+
+.footer {
+    height: 35px; 
+    position: fixed; 
+    bottom: 0%;
+    padding-bottom: 1%;
+    width: 100%; 
+    background-color: black;
+}
+
+@media (max-width: 190px) {
+
+    .footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .column {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .left {
+        width: 200%;
+    }
+
+    .neutral {
+        margin-top: 15px;
+        max-width: 100%;
+        font-size: 10vw;
+        margin-bottom: 4rem;
+    }
+
+    .column {
+        margin-top: -20px;
+    }
+
+    .footer {
+        padding-top: 20px;
+        position: relative;
+    }
+}
